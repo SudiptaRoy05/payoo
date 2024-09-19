@@ -1,3 +1,8 @@
+document.getElementById('addMoneyOption').addEventListener('click',function(){
+    const div = document.getElementById('addMoneyInputField');
+    div.style.display ='block';
+})
+
 document.getElementById('addMoney').addEventListener('click', function (e) {
     e.preventDefault();
     const pin = document.getElementById('passwd').value;
@@ -14,6 +19,7 @@ document.getElementById('addMoney').addEventListener('click', function (e) {
        
         
         document.getElementById('availableBalance').innerText = newBalance;
+        alert('transaction successfull');
         
     }
 })
